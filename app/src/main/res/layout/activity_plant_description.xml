@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".PlantDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/plant_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#1B5E20"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_margin="3dp"
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/monsterra">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/pictureBackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/monsterra">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/plant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/abril_fatface"
+        android:shadowColor="#395B64"
+        android:shadowDx="2"
+        android:shadowDy="8"
+        android:shadowRadius="5"
+        android:text="Monstera"
+        android:textColor="#1B5E20"
+        android:textSize="50sp">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/plant_image"
+        android:id="@+id/card_info"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#003638"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Care Instructions"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/firstTextBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="textMultiLine"
+                android:textColor="#003638"
+                android:lineSpacingExtra="8sp"
+                android:singleLine="false"
+                android:text="Monstera is a tropical plant from the Araceae family. Monstera is distinguished by its large, vibrant leaves as well as its distinctive pattern."
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#003638"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="8sp"
+                android:text="Monstera Deliciosa thrives in bright and indirect sunlight.
+The ideal place for them to grow healthy and happy would be one that provides
+them with partial, even full shade."
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/backToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/card_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Back to Categories"
+            android:textColor="#1B5E20" />
+    <TextView
+        android:id="@+id/backToCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Houseplants"
+        android:textColor="#1B5E20"
+        android:layout_below="@+id/card_info"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
+</ScrollView>

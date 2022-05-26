@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignmentprojecttatianapasechnik">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Plants Project"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AssignmentProjectTatianaPasechnik">
+        <activity
+            android:name=".PlantDescription"
+            android:exported="false" />
+        <activity
+            android:name=".Pots"
+            android:exported="false"
+            android:label="Pots"
+            android:theme="@style/PotsTheme" />
+        <activity
+            android:name=".Succulents"
+            android:exported="false"
+            android:label="Succulents"
+            android:theme="@style/SucculentPlantsTheme" />
+        <activity
+            android:name=".HousePlants"
+            android:exported="false"
+            android:label="House Plants"
+            android:theme="@style/HousePlantsTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
