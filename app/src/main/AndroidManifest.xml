@@ -11,7 +11,8 @@
         android:theme="@style/Theme.AssignmentProjectTatianaPasechnik">
         <activity
             android:name=".PlantDescription"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/HousePlantsTheme"/>
         <activity
             android:name=".Pots"
             android:exported="false"

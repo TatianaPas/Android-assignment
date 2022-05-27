@@ -17,7 +17,7 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="150dp"
         app:cardCornerRadius="10dp"
         app:cardBackgroundColor="#1B5E20"
         app:cardElevation="8dp">
@@ -33,43 +33,39 @@
     </androidx.cardview.widget.CardView>
 
 
-    <ImageView
-        android:id="@+id/pictureBackground"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:alpha="0.3"
-        android:scaleType="centerCrop"
-        android:src="@drawable/monsterra">
+        <ImageView
+            android:id="@+id/pictureBackground"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:alpha="0.3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/monsterra">
 
-    </ImageView>
+        </ImageView>
 
-    <TextView
-        android:id="@+id/plant_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/abril_fatface"
-        android:shadowColor="#395B64"
-        android:shadowDx="2"
-        android:shadowDy="8"
-        android:shadowRadius="5"
-        android:text="Monstera"
-        android:textColor="#1B5E20"
-        android:textSize="50sp">
-    </TextView>
+        <TextView
+            android:id="@+id/plant_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/abril_fatface"
+            android:shadowColor="#395B64"
+            android:shadowDx="2"
+            android:shadowDy="8"
+            android:shadowRadius="5"
+            android:text=""
+            android:textColor="#1B5E20"
+            android:textSize="50sp">
+        </TextView>
 
     <androidx.cardview.widget.CardView
-
+        style="@style/CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_below="@id/plant_image"
-        android:id="@+id/card_info"
-        app:cardElevation="10dp"
         android:layout_margin="10dp"
-        android:layout_gravity="center"
-        app:cardCornerRadius="5dp">
+        android:id="@+id/card_info">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -85,7 +81,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/firstTextBlock"
+                android:id="@+id/firstDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -96,20 +92,19 @@
                 android:textColor="#003638"
                 android:lineSpacingExtra="8sp"
                 android:singleLine="false"
-                android:text="Monstera is a tropical plant from the Araceae family. Monstera is distinguished by its large, vibrant leaves as well as its distinctive pattern."
+                android:text=""
                 android:textAlignment="viewStart"
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/secondDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:textColor="#003638"
                 android:inputType="textMultiLine"
                 android:lineSpacingExtra="8sp"
-                android:text="Monstera Deliciosa thrives in bright and indirect sunlight.
-The ideal place for them to grow healthy and happy would be one that provides
-them with partial, even full shade."
+                android:text=""
                 android:textSize="18sp" />
         </LinearLayout>
 

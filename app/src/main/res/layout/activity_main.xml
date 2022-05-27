@@ -11,14 +11,13 @@
     android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                style="@style/CardView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_margin="10dp"
                 android:id="@+id/house_plants"
                 android:layout_weight="1"
-                app:cardElevation="10dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="5dp">
+               >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -43,14 +42,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                style="@style/CardView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:id="@+id/card_succulents"
-                app:cardElevation="10dp"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                app:cardCornerRadius="5dp">
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -76,10 +74,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:id="@+id/card_pots"
-                app:cardElevation="10dp"
                 android:layout_margin="10dp"
-                app:cardCornerRadius="5dp">
+                android:id="@+id/card_pots"
+                style="@style/CardView">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
