@@ -47,7 +47,7 @@ public class HousePlants extends AppCompatActivity implements CustomAdapter.OnIt
         plantsList.add(new ModelClass(R.drawable.monstera2,"Monstera","Average to High", "15-20", "Medium to Bright"));
         plantsList.add(new ModelClass(R.drawable.peperomia,"Peperomia","Medium", "Average", "Medium to Bright"));
         plantsList.add(new ModelClass(R.drawable.snakeplant,"Sansevieria","Normal", "18-27", "Low Light"));
-        plantsList.add(new ModelClass(R.drawable.birkin,"Philodendron","High", "above 12", "Medium to Bright"));
+        plantsList.add(new ModelClass(R.drawable.birkin,"Philodendron","High", "Above 12", "Medium to Bright"));
         plantsList.add(new ModelClass(R.drawable.ficus1,"Ficus","Normal", "10-15", "Medium to Bright"));
         plantsList.add(new ModelClass(R.drawable.zzplant,"ZZ Plant","Average", "15-24", "Low to Bright"));
         plantsList.add(new ModelClass(R.drawable.maranta1,"Maranta","Mist frequently", "15-23", "Low to Medium"));

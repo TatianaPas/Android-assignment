@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient1"
+    android:background="#F1F8E9"
     tools:context=".PlantDescription">
 
     <RelativeLayout
@@ -116,25 +116,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/card_info"
+            android:layout_alignParentTop="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
             android:clickable="true"
             android:cursorVisible="true"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="sans-serif-black"
             android:text="Back to Categories"
             android:textColor="#1B5E20" />
-    <TextView
-        android:id="@+id/backToCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back to Houseplants"
-        android:textColor="#1B5E20"
-        android:layout_below="@+id/card_info"
-        android:layout_marginBottom="20dp"
-        android:layout_alignParentRight="true"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/backToCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Back to Houseplants"
+            android:textColor="#1B5E20" />
 
 </RelativeLayout>
 </ScrollView>
