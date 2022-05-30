@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentProjectTatianaPasechnik">
         <activity
+            android:name=".SuculentDescription"
+            android:exported="false" />
+        <activity
             android:name=".PlantDescription"
             android:exported="false"
-            android:theme="@style/HousePlantsTheme"/>
+            android:theme="@style/HousePlantsTheme" />
         <activity
             android:name=".Pots"
             android:exported="false"

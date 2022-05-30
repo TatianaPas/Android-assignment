@@ -11,26 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/plant_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp"
-        app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="#1B5E20"
-        app:cardElevation="8dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/plant_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#1B5E20"
+            app:cardElevation="8dp">
 
-        <ImageView
-            android:layout_margin="3dp"
-            android:id="@+id/picture"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/monsterra">
-        </ImageView>
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_margin="3dp"
+                android:id="@+id/picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monsterra">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
 
 
         <ImageView
@@ -54,61 +54,60 @@
             android:shadowDx="2"
             android:shadowDy="8"
             android:shadowRadius="5"
-            android:text=""
+            android:text="plant_heading"
             android:textColor="#1B5E20"
-            android:textSize="50sp">
-        </TextView>
+            android:textSize="50sp"></TextView>
 
-    <androidx.cardview.widget.CardView
-        style="@style/CardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/plant_image"
-        android:layout_margin="10dp"
-        android:id="@+id/card_info">
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            style="@style/CardView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:textColor="#003638"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plant_image"
+            android:layout_margin="10dp"
+            android:id="@+id/card_info">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
-                android:text="Care Instructions"
-                android:padding="10dp"
-                android:textSize="20sp" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/firstDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="5dp"
-                android:inputType="textMultiLine"
-                android:textColor="#003638"
-                android:lineSpacingExtra="8sp"
-                android:singleLine="false"
-                android:text=""
-                android:textAlignment="viewStart"
-                android:textSize="18sp" />
+                <TextView
+                    android:textColor="#003638"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Care Instructions"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/secondDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:textColor="#003638"
-                android:inputType="textMultiLine"
-                android:lineSpacingExtra="8sp"
-                android:text=""
-                android:textSize="18sp" />
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/firstDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="#003638"
+                    android:lineSpacingExtra="8sp"
+                    android:singleLine="false"
+                    android:text="firstDescription"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
 
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/secondDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#003638"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="8sp"
+                    android:text="secondDescription"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
         <TextView
@@ -137,5 +136,5 @@
             android:text="Back to Houseplants"
             android:textColor="#1B5E20" />
 
-</RelativeLayout>
+    </RelativeLayout>
 </ScrollView>

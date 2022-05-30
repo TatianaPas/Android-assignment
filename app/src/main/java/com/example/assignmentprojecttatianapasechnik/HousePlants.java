@@ -82,7 +82,7 @@ public class HousePlants extends AppCompatActivity implements CustomAdapter.OnIt
             Intent intent = new Intent(this, PlantDescription.class);
             intent.putExtra("PlantHeading","Sansevieria");
             intent.putExtra("BackgroundPhoto", R.drawable.snakeplant2);
-            intent.putExtra("PlantPhoto", R.drawable.snakeplant);
+            intent.putExtra("PlantPhoto", R.drawable.snakeplant_nobackground);
             intent.putExtra("description1","Sansevieria trifasciata, commonly known as the snake plant, is one of the most popular of houseplants.  These plants are easy to grow and, in many cases, are nearly indestructible. They will thrive in very bright light or almost dark corners of the house");
             intent.putExtra("description2"," Snake plants generally grow slowly in indoor light, but increasing its exposure to light will boost growth if it receives a few hours of direct sun. Planting and repotting is best done in the spring.");
             startActivity(intent);
