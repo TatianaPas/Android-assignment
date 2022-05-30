@@ -28,9 +28,9 @@
     </style>
 
     <style name="SucculentPlantsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
-        <item name="colorPrimary">#B68973</item>
-        <item name="colorPrimaryVariant">#B68973</item>
-        <item name="colorPrimaryDark">#B68973</item>
+        <item name="colorPrimary">#144D53</item>
+        <item name="colorPrimaryVariant">#144D53</item>
+        <item name="colorPrimaryDark">#144D53</item>
     </style>
 
     <style name="PotsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
