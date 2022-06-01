@@ -5,87 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:padding="10dp"
-    android:background="@drawable/gradient4"
+    android:background="@color/green"
     tools:context=".MainActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <TextView
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Assignment Project 502.634\n Plants info app \n Tatiana Pasechnik 2022" />
+
+
+    </LinearLayout>
+
+
 
             <androidx.cardview.widget.CardView
-                style="@style/CardView"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_margin="10dp"
-                android:id="@+id/house_plants"
-                android:layout_weight="1"
-               >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@drawable/gradient1">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/folliage">
-                    </ImageView>
-
-                    <TextView
-                        style="@style/HeaderText"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:fontFamily="sans-serif-black"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="House Plants" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                style="@style/CardView"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:id="@+id/card_succulents"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@drawable/gradient2">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
                         android:scaleType="centerCrop"
                         android:src="@drawable/succulents">
                     </ImageView>
                 <TextView
                     style="@style/HeaderText"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:gravity="center_horizontal|center_vertical"
                     android:text="Succulents"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/house_plants"
+        android:layout_weight="1"
+        app:cardElevation="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/folliage">
+            </ImageView>
+
+            <TextView
+                style="@style/HeaderText"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="House Plants" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:id="@+id/card_pots"
-                style="@style/CardView">
+                app:cardElevation="8dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@drawable/gradient3">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
                         android:paddingBottom="50dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/colorfulpots">
@@ -94,7 +118,8 @@
                 <TextView
                     style="@style/HeaderText"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:gravity="center_horizontal|center_vertical"
                     android:text="Pots"/>
                 </LinearLayout>
