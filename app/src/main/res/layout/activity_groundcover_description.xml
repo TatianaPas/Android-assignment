@@ -111,16 +111,16 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/picture"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginBottom="-60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/falls"
-            app:layout_constraintBottom_toTopOf="@+id/description_layout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"></ImageView>
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="-60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/falls"
+                app:layout_constraintBottom_toTopOf="@+id/description_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"></ImageView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@ public class HousePlantDescription extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_house_plant_description);
+        setContentView(R.layout.activity_groundcover_description);
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null)
         {

@@ -28,8 +28,6 @@ public class PlantDescription extends AppCompatActivity {
         plantHeadign=findViewById(R.id.plant_heading);
         plantHeadign.setText(getIntent().getStringExtra("PlantHeading"));
 
-        plantPhotoBackground = findViewById(R.id.pictureBackground);
-        plantPhotoBackground.setImageResource(bundle.getInt("BackgroundPhoto"));
 
         plantPhoto = findViewById(R.id.picture);
         plantPhoto.setImageResource((bundle.getInt("PlantPhoto")));

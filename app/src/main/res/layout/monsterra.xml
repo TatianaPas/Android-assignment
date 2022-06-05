@@ -8,65 +8,50 @@
     <androidx.cardview.widget.CardView
         style="@style/CardView"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="120dp">
 
     <RelativeLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="120dp">
 
 
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yellow_flower">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="8dp">
-
-            <ImageView
-                android:id="@+id/picture"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/monsterra">
-
-            </ImageView>
-        </androidx.cardview.widget.CardView>
+        </ImageView>
 
         <TextView
             android:id="@+id/plant_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="20dp"
-            android:layout_toRightOf="@id/card_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/picture"
             android:fontFamily="sans-serif-black"
-            android:text="Monstera"
+            android:text="Primula"
             android:textColor="#345B63"
             android:textSize="20sp" />
 
         <LinearLayout
             android:id="@+id/layout2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:minWidth="120dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plant_name"
+            android:layout_toRightOf="@id/picture"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp">
 
                 <ImageView
                     android:layout_width="20dp"
@@ -78,7 +63,6 @@
                     android:id="@+id/humidity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
                     android:text="Humidity"
                     android:textSize="12sp" />
@@ -86,8 +70,8 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
 
                 <ImageView
                     android:layout_width="20dp"
@@ -99,7 +83,6 @@
                     android:id="@+id/temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
                     android:text="Temperature"
                     android:textSize="12sp" />
@@ -107,8 +90,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_width="20dp"
@@ -120,7 +102,6 @@
                     android:id="@+id/light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
                     android:text="Light"
                     android:textSize="12sp" />
@@ -132,5 +113,6 @@
 
     </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
