@@ -30,7 +30,7 @@
             android:label="Succulents"
             android:theme="@style/SucculentPlantsTheme" />
         <activity
-            android:name=".HousePlants"
+            android:name=".GroundCovers"
             android:exported="false"
             android:label="House Plants"
             android:theme="@style/HousePlantsTheme" />

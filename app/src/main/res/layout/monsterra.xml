@@ -77,14 +77,14 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/temperature_24px"></ImageView>
+                    android:src="@drawable/flower_24px"></ImageView>
 
                 <TextView
                     android:id="@+id/temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Temperature"
+                    android:text="Bloom"
                     android:textSize="12sp" />
             </LinearLayout>
 

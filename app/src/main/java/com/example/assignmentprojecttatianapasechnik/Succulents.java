@@ -44,7 +44,7 @@ public class Succulents extends AppCompatActivity implements CustomAdapterSuccul
         succulentssList.add(new ModelClassSucculent(R.drawable.sedum_gold, "Sedum Gold Mound", "Species: Sedum", "Color: Green/Yellow"));
         succulentssList.add(new ModelClassSucculent(R.drawable.succulent_dark, "Aeonium Schwarzkopf", "Species: Aeonium", "Color: Dark Brown"));
         succulentssList.add(new ModelClassSucculent(R.drawable.jade_plant, "Senecio Jacobsenii", "Species: Asteraceae", "Color: Green"));
-        succulentssList.add(new ModelClassSucculent(R.drawable.echeveria_black_knight, "Echeveria Black Knight", "Species: Crassulaceae", "Color: Brown/ Green"));
+        succulentssList.add(new ModelClassSucculent(R.drawable.echeveria_black_knight, "Echeveria Black Knight", "Species: Crassulaceae", "Color: Brown"));
         succulentssList.add(new ModelClassSucculent(R.drawable.sedum_big, "Sedum Hispanicum", "Species: Sedum", "Color: Blue/ Green"));
         succulentssList.add(new ModelClassSucculent(R.drawable.succulent_green_round, "Sedum Rubrotinctum", "Species: Sedum", "Color: Green"));
 

@@ -56,7 +56,7 @@ public class PlantDescription extends AppCompatActivity {
 
     View.OnClickListener backToCategory = new View.OnClickListener(){
         public void onClick(View view) {
-            Intent housePlants = new Intent(getBaseContext(),HousePlants.class);
+            Intent housePlants = new Intent(getBaseContext(), GroundCovers.class);
             startActivity(housePlants);
         }
     };
