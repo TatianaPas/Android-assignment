@@ -29,9 +29,8 @@
             android:id="@+id/plant_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/picture"
             android:fontFamily="sans-serif-black"
             android:text="Primula"
@@ -45,6 +44,7 @@
             android:layout_below="@id/plant_name"
             android:layout_toRightOf="@id/picture"
             android:layout_marginLeft="10dp"
+            android:orientation="vertical"
             android:layout_marginTop="10dp">
 
             <LinearLayout
@@ -54,8 +54,8 @@
                 android:layout_marginRight="10dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     android:layout_marginRight="5dp"
                     android:src="@drawable/wet_24px"></ImageView>
 
@@ -71,11 +71,12 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp">
+                android:layout_marginRight="10dp"
+                >
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     android:layout_marginRight="5dp"
                     android:src="@drawable/flower_24px"></ImageView>
 
@@ -93,8 +94,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     android:layout_marginRight="5dp"
                     android:src="@drawable/sun_24px"></ImageView>
 

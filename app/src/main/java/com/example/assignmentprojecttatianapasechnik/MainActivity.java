@@ -15,20 +15,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CardView cardHousePlants = (CardView)findViewById(R.id.house_plants);
-        cardHousePlants.setOnClickListener(CardHousePlantsHandler);
+        CardView cardGroundcoverPlants = (CardView)findViewById(R.id.card_groundcover);
+        cardGroundcoverPlants.setOnClickListener(CardGroundcoverPlantsHandler);
 
         CardView cardSucculents = (CardView) findViewById(R.id.card_succulents);
         cardSucculents.setOnClickListener(CardSucculentsHandler);
 
-        CardView cardPots = (CardView) findViewById(R.id.card_pots);
-        cardPots.setOnClickListener(CardPotsHandler);
+        CardView cardFlowering = (CardView) findViewById(R.id.card_flowering);
+        cardFlowering.setOnClickListener(CardFloweringHandler);
 
 
 
     }
 
-    View.OnClickListener CardHousePlantsHandler = new View.OnClickListener(){
+    View.OnClickListener CardGroundcoverPlantsHandler = new View.OnClickListener(){
         public void onClick(View view) {
             Intent housePlants = new Intent(getBaseContext(), GroundCovers.class);
             startActivity(housePlants);
@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    View.OnClickListener CardPotsHandler = new View.OnClickListener() {
+    View.OnClickListener CardFloweringHandler = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent pots = new Intent(getBaseContext(),Pots.class);
-            startActivity(pots);
+            Intent flowers = new Intent(getBaseContext(), Flowering.class);
+            startActivity(flowers);
         }
     };
 

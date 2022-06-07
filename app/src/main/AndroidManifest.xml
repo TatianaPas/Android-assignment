@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentProjectTatianaPasechnik">
         <activity
-            android:name=".HousePlantDescription"
+            android:name=".GroundCoverDescription"
             android:exported="false" />
         <activity
             android:name=".SuculentDescription"
@@ -20,7 +20,7 @@
             android:exported="false"
             android:theme="@style/HousePlantsTheme" />
         <activity
-            android:name=".Pots"
+            android:name=".Flowering"
             android:exported="false"
             android:label="Pots"
             android:theme="@style/PotsTheme" />

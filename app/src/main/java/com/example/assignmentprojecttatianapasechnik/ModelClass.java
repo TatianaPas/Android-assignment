@@ -4,14 +4,14 @@ public class ModelClass {
     private int plant_image;
     private String plant_name;
     private String text_humidity;
-    private String text_temperature;
+    private String text_flower;
     private String text_light;
 
-    public ModelClass(int plant_image, String plant_name, String text_humidity, String text_temperature, String text_light) {
+    public ModelClass(int plant_image, String plant_name, String text_humidity, String text_flower, String text_light) {
         this.plant_image = plant_image;
         this.plant_name = plant_name;
         this.text_humidity = text_humidity;
-        this.text_temperature = text_temperature;
+        this.text_flower = text_flower;
         this.text_light = text_light;
     }
 
@@ -27,8 +27,8 @@ public class ModelClass {
         return text_humidity;
     }
 
-    public String getText_temperature() {
-        return text_temperature;
+    public String getText_flower() {
+        return text_flower;
     }
 
     public String getText_light() {

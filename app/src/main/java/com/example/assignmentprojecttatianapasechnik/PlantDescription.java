@@ -11,7 +11,6 @@ import android.widget.TextView;
 public class PlantDescription extends AppCompatActivity {
 
     TextView plantHeadign;
-    ImageView plantPhotoBackground;
     ImageView plantPhoto;
     TextView description1;
     TextView description2;

@@ -22,9 +22,9 @@
     </style>
 
     <style name="HousePlantsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
-        <item name="colorPrimary">#557C55</item>
-        <item name="colorPrimaryVariant">#557C55</item>
-        <item name="colorPrimaryDark">#219F94</item>
+        <item name="colorPrimary">#144D53</item>
+        <item name="colorPrimaryVariant">#144D53</item>
+        <item name="colorPrimaryDark">#144D53</item>
     </style>
 
     <style name="SucculentPlantsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
@@ -34,9 +34,9 @@
     </style>
 
     <style name="PotsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
-        <item name="colorPrimary">#22577E</item>
-        <item name="colorPrimaryVariant">#22577E</item>
-        <item name="colorPrimaryDark">#3D56B2</item>
+        <item name="colorPrimary">#144D53</item>
+        <item name="colorPrimaryVariant">#144D53</item>
+        <item name="colorPrimaryDark">#144D53</item>
     </style>
 
 </resources>

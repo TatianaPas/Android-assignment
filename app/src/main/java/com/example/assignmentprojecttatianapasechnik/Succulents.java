@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +25,16 @@ public class Succulents extends AppCompatActivity implements CustomAdapterSuccul
         setContentView(R.layout.activity_succulents);
         initDataSucculents();
         initRecyclerViewSucculent();
+
+        TextView BackToCategory = (TextView) findViewById(R.id.backToCategoriesButton);
+        BackToCategory.setOnClickListener(backToCategoryClick);
     }
+    View.OnClickListener backToCategoryClick = new View.OnClickListener(){
+        public void onClick(View view) {
+            Intent categories = new Intent(getBaseContext(), MainActivity.class);
+            startActivity(categories);
+        }
+    };
 
     private void initRecyclerViewSucculent() {
         recyclerViewSucculent = findViewById(R.id.recycle_view_succulents);
@@ -47,7 +58,6 @@ public class Succulents extends AppCompatActivity implements CustomAdapterSuccul
         succulentssList.add(new ModelClassSucculent(R.drawable.echeveria_black_knight, "Echeveria Black Knight", "Species: Crassulaceae", "Color: Brown"));
         succulentssList.add(new ModelClassSucculent(R.drawable.sedum_big, "Sedum Hispanicum", "Species: Sedum", "Color: Blue/ Green"));
         succulentssList.add(new ModelClassSucculent(R.drawable.succulent_green_round, "Sedum Rubrotinctum", "Species: Sedum", "Color: Green"));
-
 
     }
     public void onItemClick(int position) {

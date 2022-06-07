@@ -34,9 +34,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         int img = plantList.get(position).getPlant_image();
         String plant = plantList.get(position).getPlant_name();
         String humidity=plantList.get(position).getText_humidity();
-        String temperature=plantList.get(position).getText_temperature();
+        String flower=plantList.get(position).getText_flower();
         String light =plantList.get(position).getText_light();
-        holder.setData(img, plant, humidity, temperature, light);
+        holder.setData(img, plant, humidity, flower, light);
     }
 
     @Override
@@ -48,7 +48,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         private ImageView plant_image;
         private TextView plant_name;
         private TextView text_humidity;
-        private TextView text_temperature;
+        private TextView text_flower;
         private TextView text_light;
         OnItemListener onItemListener;
 
@@ -57,7 +57,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             this.plant_image = (itemView).findViewById(R.id.picture);
             this.plant_name = itemView.findViewById(R.id.plant_name);
             this.text_humidity = itemView.findViewById(R.id.humidity);
-            this.text_temperature = itemView.findViewById(R.id.temperature);
+            this.text_flower = itemView.findViewById(R.id.temperature);
             this.text_light = itemView.findViewById(R.id.light);
             this.onItemListener=onItemListener;
 
@@ -72,7 +72,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             plant_name.setText(plant);
             text_humidity.setText(humidity);
             text_light.setText(light);
-            text_temperature.setText(temperature);
+            text_flower.setText(temperature);
             
         }
 
