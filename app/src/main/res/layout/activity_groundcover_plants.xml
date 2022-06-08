@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
-    tools:context=".Succulents">
+    tools:context=".GroundCovers">
 
     <TextView
-        android:id="@+id/toFlowerignPlants"
+        android:id="@+id/toSucculents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
-        android:text="Flowering Plants"
+        android:text="Succulents"
         android:textColor="#E8F5E9" />
 
     <TextView
-        android:id="@+id/toGroundCovers"
+        android:id="@+id/toFlowerignPlants"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -27,7 +27,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-black"
-        android:text="Ground Covers"
+        android:text="Flowering Plants"
         android:textColor="#E8F5E9" />
 
 
@@ -35,22 +35,22 @@
         android:id="@+id/categoryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toGroundCovers"
+        android:layout_below="@id/toSucculents"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-black"
-        android:text="Succulents"
+        android:text="Ground Covers"
         android:textColor="#E8F5E9"
         android:textSize="20sp" />
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/categoryName"
+        android:id="@+id/recycle_view_houseplants"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycle_view_succulents">
+        android:layout_below="@+id/categoryName">
 
     </androidx.recyclerview.widget.RecyclerView>
-
 
 </RelativeLayout>

@@ -3,12 +3,14 @@
     <style name="Theme.AssignmentProjectTatianaPasechnik" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#144D53</item>
-        <item name="colorPrimaryVariant">#1A3C40</item>
+        <item name="colorPrimaryVariant">#00252a</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/green</item>
         <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
@@ -23,20 +25,27 @@
 
     <style name="HousePlantsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
         <item name="colorPrimary">#144D53</item>
-        <item name="colorPrimaryVariant">#144D53</item>
+        <item name="colorPrimaryVariant">#00252a</item>
         <item name="colorPrimaryDark">#144D53</item>
     </style>
 
     <style name="SucculentPlantsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
         <item name="colorPrimary">#144D53</item>
-        <item name="colorPrimaryVariant">#144D53</item>
+        <item name="colorPrimaryVariant">#00252a</item>
         <item name="colorPrimaryDark">#144D53</item>
     </style>
 
     <style name="PotsTheme" parent="Theme.AssignmentProjectTatianaPasechnik">
         <item name="colorPrimary">#144D53</item>
-        <item name="colorPrimaryVariant">#144D53</item>
+        <item name="colorPrimaryVariant">#00252a</item>
         <item name="colorPrimaryDark">#144D53</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slde_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
 </resources>

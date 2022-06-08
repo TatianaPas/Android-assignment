@@ -16,10 +16,6 @@
             android:name=".SuculentDescription"
             android:exported="false" />
         <activity
-            android:name=".PlantDescription"
-            android:exported="false"
-            android:theme="@style/HousePlantsTheme" />
-        <activity
             android:name=".Flowering"
             android:exported="false"
             android:label="Pots"

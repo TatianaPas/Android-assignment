@@ -5,9 +5,13 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Fade;
+import android.transition.TransitionManager;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
+    LinearLayout layout;
 
 
     @Override
@@ -24,14 +28,22 @@ public class MainActivity extends AppCompatActivity {
         CardView cardFlowering = (CardView) findViewById(R.id.card_flowering);
         cardFlowering.setOnClickListener(CardFloweringHandler);
 
+        layout=(LinearLayout) findViewById(R.id.container_main);
+
 
 
     }
 
     View.OnClickListener CardGroundcoverPlantsHandler = new View.OnClickListener(){
         public void onClick(View view) {
+            Fade fade = new Fade();
+            fade.setDuration(5000);
+            TransitionManager.beginDelayedTransition(layout, fade);
+
             Intent housePlants = new Intent(getBaseContext(), GroundCovers.class);
             startActivity(housePlants);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
         }
     };
 
@@ -40,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             Intent succulents = new Intent(getBaseContext(),Succulents.class);
             startActivity(succulents);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }
     };
 
@@ -48,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             Intent flowers = new Intent(getBaseContext(), Flowering.class);
             startActivity(flowers);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
         }
     };
 

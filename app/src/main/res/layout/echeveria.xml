@@ -17,9 +17,11 @@
 
 
             <ImageView
+                android:transitionName="trans1"
                 android:id="@+id/succulent_picture"
                 android:layout_width="120dp"
                 android:layout_height="130dp"
+                android:layout_marginLeft="5dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/echeveria_lilacina">
 
@@ -30,14 +32,14 @@
                 android:id="@+id/succulent_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_toRightOf="@id/succulent_picture"
                 android:fontFamily="sans-serif-black"
                 android:text="Echiveria"
                 android:textColor="#345B63"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <LinearLayout
                 android:layout_below="@id/succulent_name"
@@ -46,27 +48,53 @@
                 android:id="@+id/layout2"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/species"></ImageView>
 
                 <TextView
                     android:id="@+id/species_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Species: Echeveria"
+                    android:text="Echeveria"
                     android:textSize="14sp"
                     android:layout_marginRight="10dp"/>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/leafImage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/flower">
+                </ImageView>
                 <TextView
                     android:id="@+id/color_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Color: Green"
-                    android:textSize="12sp" />
+                    android:text="Green"
+                    android:textSize="14sp" />
+            </LinearLayout>
             </LinearLayout>
 
         </RelativeLayout>

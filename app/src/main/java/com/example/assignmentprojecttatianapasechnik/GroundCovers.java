@@ -24,17 +24,28 @@ public class GroundCovers extends AppCompatActivity implements CustomAdapter.OnI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_house_plants);
+        setContentView(R.layout.activity_groundcover_plants);
 
         initData();
         initRecyclerView();
 
-        TextView BackToCategory = (TextView) findViewById(R.id.backToCategoriesBtn);
-        BackToCategory.setOnClickListener(backToCategoryClick);
+        // inicialise navigation menu on top of the page, set onClick listeners
+        TextView succulentsCategury = (TextView) findViewById(R.id.toSucculents);
+        succulentsCategury.setOnClickListener(toSucculents);
+        TextView flowerCategury = (TextView) findViewById(R.id.toFlowerignPlants);
+        flowerCategury.setOnClickListener(toFlowers);
     }
-    View.OnClickListener backToCategoryClick = new View.OnClickListener(){
+    // redirect to Succulent category
+    View.OnClickListener toSucculents = new View.OnClickListener(){
         public void onClick(View view) {
-            Intent categories = new Intent(getBaseContext(), MainActivity.class);
+            Intent categories = new Intent(getBaseContext(), Succulents.class);
+            startActivity(categories);
+        }
+    };
+    // redirect to Flowering plants category
+    View.OnClickListener toFlowers = new View.OnClickListener(){
+        public void onClick(View view) {
+            Intent categories = new Intent(getBaseContext(), Flowering.class);
             startActivity(categories);
         }
     };

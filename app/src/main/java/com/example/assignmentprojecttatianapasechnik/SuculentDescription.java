@@ -13,6 +13,7 @@ public class SuculentDescription extends AppCompatActivity {
     ImageView plantPhoto;
     TextView description1;
     TextView description2;
+    TextView link;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,6 @@ public class SuculentDescription extends AppCompatActivity {
             plantName=findViewById(R.id.sucuclentName);
             plantName.setText(getIntent().getStringExtra("plantName"));
 
-
             plantPhoto = findViewById(R.id.photo_succulent);
             plantPhoto.setImageResource((bundle.getInt("photo")));
 
@@ -36,9 +36,12 @@ public class SuculentDescription extends AppCompatActivity {
             description2 = findViewById(R.id.secondDescriptionDucculent);
             description2.setText(bundle.getString("description2"));
 
+            link=findViewById(R.id.backToCategory_Succulent);
+            link.setText(bundle.getString("link"));
+
             TextView mainPage = (TextView) findViewById(R.id.backToMainSucculent);
             mainPage.setOnClickListener(backToMain);
-            TextView categoryPage = (TextView) findViewById(R.id.backToCategorySucculent);
+            TextView categoryPage = (TextView) findViewById(R.id.backToCategory_Succulent);
             categoryPage.setOnClickListener(backToCategory);
         }
 
@@ -51,11 +54,21 @@ public class SuculentDescription extends AppCompatActivity {
             startActivity(mainPageView);
         }
     };
-
+// the view reused by 2 categories
     View.OnClickListener backToCategory = new View.OnClickListener(){
         public void onClick(View view) {
-            Intent succulents = new Intent(getBaseContext(),Succulents.class);
-            startActivity(succulents);
+
+            TextView text_link=(TextView) findViewById(R.id.backToCategory_Succulent);
+            String text = text_link.getText().toString();
+// check if text contains word Succulent, then display succulents category, if not, display flowering plants category
+            if(text.contains("Succulents")) {
+                Intent succulents = new Intent(getBaseContext(), Succulents.class);
+                startActivity(succulents);
+            }
+            else{
+                Intent succulents = new Intent(getBaseContext(), Flowering.class);
+                startActivity(succulents);
+            }
         }
     };
     }

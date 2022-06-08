@@ -17,6 +17,7 @@
 
 
         <ImageView
+            android:layout_marginLeft="5dp"
             android:id="@+id/picture"
             android:layout_width="120dp"
             android:layout_height="130dp"
@@ -30,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_toRightOf="@id/picture"
             android:fontFamily="sans-serif-black"
             android:text="Primula"
@@ -65,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:text="Humidity"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -78,7 +79,7 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/flower_24px"></ImageView>
+                    android:src="@drawable/flower"></ImageView>
 
                 <TextView
                     android:id="@+id/temperature"
@@ -86,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:text="Bloom"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -105,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:text="Light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
 
