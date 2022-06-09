@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Fade;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -44,6 +45,15 @@ public class SuculentDescription extends AppCompatActivity {
             TextView categoryPage = (TextView) findViewById(R.id.backToCategory_Succulent);
             categoryPage.setOnClickListener(backToCategory);
         }
+
+
+        Fade fade = new Fade();
+        View decor = getWindow().getDecorView();
+        fade.excludeTarget(decor.findViewById(androidx.appcompat.R.id.action_bar_container), true);
+        fade.excludeTarget(android.R.id.statusBarBackground, true);
+        fade.excludeTarget(android.R.id.navigationBarBackground, true);
+        getWindow().setEnterTransition(fade);
+        getWindow().setExitTransition(fade);
 
     }
 

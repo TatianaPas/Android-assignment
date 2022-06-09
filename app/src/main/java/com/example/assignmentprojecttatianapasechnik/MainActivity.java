@@ -30,8 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
         layout=(LinearLayout) findViewById(R.id.container_main);
 
-
-
+        // set a nice look of transition without flash
+        Fade fade = new Fade();
+        View decor = getWindow().getDecorView();
+        fade.excludeTarget(decor.findViewById(androidx.appcompat.R.id.action_bar_container), true);
+        fade.excludeTarget(android.R.id.statusBarBackground, true);
+        fade.excludeTarget(android.R.id.navigationBarBackground, true);
+        getWindow().setEnterTransition(fade);
+        getWindow().setExitTransition(fade);
     }
 
     View.OnClickListener CardGroundcoverPlantsHandler = new View.OnClickListener(){
